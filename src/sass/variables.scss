@@ -1,0 +1,26 @@
+// MAX-WIDTH CONTAINER SIZE
+$max-width: 1920;
+
+
+// BREAKPOINTS
+$mobile: 1250;
+$desktop: $mobile + 1;
+
+
+// COLORS
+// $copy: ;
+// $bgcolor: ;
+:root {
+    --primary-dark: #D5874C;
+    --primary: #F4A76C;
+    --primary-light: #FFAD6E;
+    --white: #FFFFFF;
+    --offwhite: #FFF7F2;
+    --grey: #D5D5D5;
+    --grey-light: #F7F7F7;
+    --grey-dark: #595959;
+    --black: #000000;
+    --dark: #1A1A1A;
+    --dark-light: #363636;
+}
+

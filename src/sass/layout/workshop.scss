@@ -1,0 +1,340 @@
+#workshops {
+  padding-left: 0px;
+  .order-1{
+    @include breakpoint($mobile){
+      order: 1;
+    }
+    
+  }
+  .order-2{
+    @include breakpoint($mobile){
+      order: 2;
+    }
+  }
+  .order-3{
+    @include breakpoint($mobile){
+      order: 3;
+    }
+  }
+  .grid{
+    display: grid;
+      grid-template-columns: 1fr 37px;
+    @include breakpoint($mobile){
+      margin-top: 68px;
+      display: grid;
+      grid-template-columns: 5fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 30px;
+
+    }
+  }
+
+  
+  .aside {
+    z-index: -1;
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--grey-light);
+    p {
+      @include ssp-extra-light(var(--dark), 18px);
+      writing-mode: vertical-lr;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+      padding-top: 15px;
+      padding-left: 10px;
+      padding-right: 5px;
+    }
+    @include breakpoint($mobile){
+      p {
+        font-size: 42px;
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        text-orientation: sideways;
+        padding: 0 30px;
+      }
+      align-items: center;
+      margin-top: 0;
+      
+    }
+  }
+
+  .desktop-only{
+    @include breakpoint(0,$mobile){
+      @include hidden;
+    }
+  }
+  .two-rows{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+   }
+  .level {
+    position: relative;
+    margin-top: 100px;
+    padding: 0 16px;
+    z-index: -1;
+    background-color: var(--dark-light);
+    display: flex;
+   flex-direction: column;
+    @include breakpoint($mobile){
+      padding: 0;
+      margin-top:  0;
+      flex-direction: row;
+      padding-left: 0;
+      align-content: space-between;
+      height: fit-content;
+    }
+    
+    .number-1 {
+      @include hidden;
+      @include breakpoint($mobile){
+ 
+        
+        @include show;
+        display: flex;
+        align-items: flex-end;
+        background-color: var(--white);
+      }
+
+      p{
+        @include breakpoint($mobile){
+          @include show;
+          @include ssp-semi-bold(var(--dark-light), 300px);
+          position: relative;
+          left: 23px;
+          bottom: 17px;
+          line-height: 0.6;
+        }
+       
+      }
+    }
+    .number-1 {
+      @include hidden;
+      @include breakpoint($mobile){
+ 
+        
+        @include show;
+        display: flex;
+        align-items: flex-end;
+        background-color: var(--white);
+      }
+
+      p{
+        @include breakpoint($mobile){
+          @include show;
+          @include ssp-semi-bold(var(--dark-light), 300px);
+          position: relative;
+          left: 23px;
+          bottom: 16px;
+          line-height: 0.6;
+        }
+       
+      }
+    }
+    .number-2 {
+      @include hidden;
+      @include breakpoint($mobile){
+ 
+        
+        @include show;
+        display: flex;
+        align-items: center;
+        background-color: var(--white);
+      }
+
+      p{
+        @include breakpoint($mobile){
+          @include show;
+          @include ssp-semi-bold(var(--dark-light), 300px);
+          position: relative;
+          left: 23px;
+        }
+       
+      }
+    }
+    .number-3 {
+      @include hidden;
+      @include breakpoint($mobile){
+ 
+        
+        @include show;
+        display: flex;
+        align-items: flex-start;
+        background-color: var(--white);
+      }
+
+      p{
+        @include breakpoint($mobile){
+          @include show;
+          @include ssp-semi-bold(var(--dark-light), 300px);
+          position: relative;
+          left: 23px;
+          line-height: 0.6;
+        }
+       
+      }
+    }
+    img {
+        align-self: center;
+        width: 50px;
+        height: 50px;
+
+        @include breakpoint($mobile){
+          width: 150px;
+          height: 150px;
+        }
+      }
+    .symbol {
+      top: -55px;
+      position: absolute;
+      left: 0; 
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto; 
+        width: fit-content;
+      @include breakpoint($mobile){
+        position: unset;
+        align-items: center;
+        display: flex;
+        padding: 30px;
+      }
+      .image-container {
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        padding: 24px;
+        border-radius: 50%;
+        background-color: var(--grey-dark);
+        @include breakpoint($mobile){
+         padding: 50px;
+        }
+        img {
+          width: 67px;
+          height: 67px;
+          @include breakpoint($mobile){
+            width: 140px;
+            height: 140px;
+          }
+        }
+
+        .counter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            top: -10px;
+            right: -10px;
+            position: absolute;
+            background-color: var(--grey);
+            width: 35px;
+            height: 35px;
+            z-index: -1;
+            p{
+                @include ssp-semi-bold(var(--primary-dark), 26px);
+            }
+        }
+      }
+    }
+   
+
+    .quote{
+      padding: 0 30px;
+      position: relative;
+      @include breakpoint(0,$mobile){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+     
+      blockquote{
+        align-self: center;
+        @include ssp-light(var(--white), 22px);
+        padding-bottom: 35px;
+        
+        @include breakpoint($mobile){
+          @include ssp-light(var(--white), 38px);
+        }
+       
+      }
+
+      @include breakpoint($mobile){
+        img{
+          position: absolute;
+        }
+      }
+    }
+
+    .lvl-3{
+      @include breakpoint($mobile){
+      img{
+        bottom: -11px;
+        right: 0;
+      }  
+      display: flex;
+        blockquote{
+          padding-top: 35px;
+          align-self: flex-start;
+        }
+      }
+    }
+    .lvl-2{
+      @include breakpoint($mobile){
+        img{
+          top: -11px;
+          right: 0;
+        }  
+        display: flex;
+        blockquote{
+          align-self: flex-end;
+        }
+        }
+    }
+    .lvl-1{
+      @include breakpoint($mobile){
+        img{
+          top: -11px;
+          right: 0;
+        }  
+        display: flex;
+        blockquote{
+          align-self: flex-end;
+        }
+        }
+    }
+    
+    .content {
+     
+      display: flex;
+      margin-top: 80px;
+      flex-direction: column;
+      p {
+        @include ssp-light(var(--white), 16px);
+        line-height: 20px;
+        padding-bottom: 20px;
+      }
+
+      h3{
+        padding-bottom: 10px;
+      }
+      @include breakpoint($mobile){
+        padding: 0 30px;
+        margin: 0;
+        padding-bottom: 30px;
+        h3{
+          padding-top: 32px;
+          padding-bottom: 16px;
+        }
+        p {
+          font-size: 22px;
+          padding-bottom: 64px;
+        }
+
+      }
+     
+    }
+
+    
+  }
+}

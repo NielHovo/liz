@@ -1,0 +1,71 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
+
+}
+
+section{
+  padding-left: 16px;
+  margin-top: 60px;
+
+  @include breakpoint($mobile){
+    padding:  0 35px;
+  }
+}
+.button{
+  width: fit-content;
+  @include ssp-semi-bold(white,16px);
+  border: 1px solid var(--primary);
+  height: 41px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  @include breakpoint($mobile){
+    height: 61px;
+    font-size: 22px;
+    padding: 0 30px;
+  }
+}
+p{
+  @include ssp-light(var(--dark),16px);
+  @include breakpoint($mobile){
+    font-size: 22px;
+  }
+}
+h2{
+  @include ssp-light( var(--primary-dark),28px);
+
+  @include breakpoint($mobile){
+    font-size: 68px;
+  }
+}
+.super-headline{
+  @include ssp-semi-bold( var(--dark-light),16px);
+
+  @include breakpoint($mobile){
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+  
+}
+h3{
+  @include ssp-light(var(--primary-dark), 22px );
+
+  @include breakpoint($mobile){
+    font-size: 38px;
+  }
+ 
+}
+
+.mobile-only{
+  @include breakpoint($mobile){
+    @include hidden;
+    position: absolute;
+  }
+}

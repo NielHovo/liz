@@ -1,0 +1,36 @@
+footer {
+    
+    @include breakpoint($mobile){
+        display: flex;
+        justify-content: space-between;
+    }
+    background-color: var(--dark-light);
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    @include breakpoint($mobile){
+        padding-top: 22px;
+    }
+    h4{
+        @include ssp-light(var(--white), 22px );
+        padding-bottom: 3px;
+        @include breakpoint($mobile){
+            font-size: 38px;
+            padding-bottom: 10px;
+        }
+    }
+    p{
+        @include ssp-light(var(--white), 16px );
+        padding-bottom: 5px;
+        @include breakpoint($mobile){
+            font-size:  22px;
+        }
+    }
+    a{
+        @include ssp-light(var(--primary), 22px );
+        @include breakpoint($mobile){
+            font-size:  22px;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+
+
+header{
+    background-color: black;
+    display: flex;
+    padding-top: 11px;
+    padding-left: 36px;
+    background-image: url(../../images/intro.jpg);
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    height: 558px;
+    flex-direction: column;
+
+    @include breakpoint($mobile){
+        height: 80vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: 110%;
+     }
+
+   
+    #hamburger{
+        @include breakpoint($mobile){
+            @include hidden;
+        }
+       
+    }
+    @include breakpoint($mobile){
+    .nav{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav{
+        padding-right: 36px;
+        ul{
+            display: flex;
+            gap: 20px;
+            li{
+
+               a{
+                @include ssp-semi-bold(var(--primary-light),22px);
+                
+                text-decoration: underline;
+                text-underline-offset: 8px;
+               } 
+            }
+        }
+    }
+}
+
+    h1{
+        
+        @include ssp-semi-bold(white,16px);
+        span{
+            @include ssp-light(white,16px);
+        }
+        @include breakpoint($mobile){
+           font-size: 22px;
+           span{
+            font-size: 22px;
+           }
+        }
+    }
+
+    .cta{
+        margin-top: 270px;
+        margin-right: 50px;
+        align-self: flex-end;
+        h2{
+            margin: 10px 0;
+            @include ssp-light(var(--primary-dark),38px);
+            @include breakpoint($mobile){
+            font-size: 68px;
+            padding-bottom: 30px;
+            }
+        }
+        @include breakpoint($mobile){
+            margin-top: 15%;
+            margin-left: 7%;
+           align-self: flex-start;
+          
+        }
+
+       
+    }
+}
