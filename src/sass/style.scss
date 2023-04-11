@@ -1,14 +1,11 @@
-@import "reset";
-@import "variables";
 @import "fonts";
 @import "base";
 @import "global";
-@import "hamburger";
-@import "mainnav";
-@import "mainnav-mobile";
-@import "layout/footer";
-@import "layout/header";
-@import "layout/workshop.scss";
+@import "nav";
+@import "layout/hero.scss";
+@import "layout/happiness.scss";
 @import "layout/about.scss";
-@import "layout/news.scss";
+@import "layout/contact.scss";
+@import "layout/footer.scss";
+@import "layout/coaching.scss";
 

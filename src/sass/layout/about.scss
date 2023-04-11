@@ -1,51 +1,27 @@
-
-
 #about{
-    background-color: var(--offwhite);
-    padding-left: 0px;
-    padding-bottom: 55px;
-    padding-top: 62px;
-    @include breakpoint($mobile){
+    display: grid;
+    background: url("images/background.png");
+    padding: 100px;
+    place-items: center;
+    align-items: center;
+    .images{
         display: flex;
-        padding:  170px 0;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
     }
-
-    .content-container{
-        @include breakpoint($mobile){
-            width: 50%;
-        }
+    #img1{
+        width: 30%;
     }
-    img{
-        @include breakpoint($mobile){
-           width: 50%;
-            object-fit: cover;
-            padding-left: 36px;
-            max-height: 740px;
-        }
-        max-width: 100%;
-        height: auto;
-        
+    #img2{
+        width: 60%;
     }
-    .title{
-        padding-top: 20px;
-        padding-left: 16px;
+    button{
+        margin-top: 50px;
+        border: 4px #751994 solid;
+        background: rgba($color: #751994, $alpha: 0.5);
+        font-weight: bold;
+        color: #751994;
+        padding: 20px 40px 20px 40px;
     }
-    .content{
-        padding-left: 16px;
-        padding-top: 16px;
-        padding-bottom: 10px;
-        padding-right: 16px;
-    p{
-        max-width: 600px;
-        padding-bottom: 10px;
-        line-height: 30px;
-    }
-    }
-        .button{
-            color: var(--black);
-            @include breakpoint($mobile){
-                margin-top: 35px;
-            }
-        }
-    
 }

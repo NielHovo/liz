@@ -1,36 +1,15 @@
-footer {
-    
-    @include breakpoint($mobile){
-        display: flex;
-        justify-content: space-between;
-    }
-    background-color: var(--dark-light);
-    padding-left: 16px;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    padding-right: 16px;
-    @include breakpoint($mobile){
-        padding-top: 22px;
-    }
-    h4{
-        @include ssp-light(var(--white), 22px );
-        padding-bottom: 3px;
-        @include breakpoint($mobile){
-            font-size: 38px;
-            padding-bottom: 10px;
-        }
-    }
-    p{
-        @include ssp-light(var(--white), 16px );
-        padding-bottom: 5px;
-        @include breakpoint($mobile){
-            font-size:  22px;
-        }
-    }
-    a{
-        @include ssp-light(var(--primary), 22px );
-        @include breakpoint($mobile){
-            font-size:  22px;
-        }
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 150px;
+    background-color: #772D90;
+    border-top: #5e2571 10px solid;
+    color: white;
+    h3{
+        font-size: 1.6rem;
+        font-weight: bold;
     }
 }

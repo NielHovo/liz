@@ -1,0 +1,54 @@
+#happiness{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #FFE9F8;
+    gap: 100px;
+    padding: 50px;
+    #title{
+        width: 35vw;
+        margin-bottom: 50px;
+    }
+    .level{
+        padding: 30px;
+        position: relative;
+        width: 80vw;
+        background-color: white;
+        border: 8px solid #DAC3D3;
+        h2{
+            font-size: 4rem;
+            color: #A07292;
+        }
+        .number{
+            position: absolute;
+            left: 50%;
+            font-size: 3rem;
+            top: -40px;
+            background-color: #A07292;
+            border-radius: 50%;
+            padding: 25px;
+            color: white;
+            border: 8px solid #DAC3D3;;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                width: 80%;
+                font-size: 2rem;
+            }
+        }
+        button{
+            width: 100%;
+            border: #A07292 4px solid;
+            background-color: #F3B7E0;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}

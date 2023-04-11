@@ -1,0 +1,32 @@
+#coaching{
+    background: url("images/background.png");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    .course{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50vw;
+        color: white;
+        background-color: #751994;
+        p{
+            width: 80%;
+        }
+        button{
+            border: 6px solid white;
+            padding: 20px 50px 20px 50px;
+        }
+    }
+    .one{
+        background-color: #9935ba;
+    }
+    .two{
+        background-color: #b94ade;
+    }
+}

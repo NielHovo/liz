@@ -1,0 +1,51 @@
+#contact{
+    display: flex;
+    width: 100vw;
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        h2{
+            color: #A016CE;
+            font-size: 3.5rem;
+        }
+        button{
+            margin-top: 50px;
+            border: 4px #751994 solid;
+            background: transparent;
+            font-weight: bold;
+            color: #751994;
+            padding: 20px 40px 20px 40px;
+        }
+    }
+    img{
+        width: 50vw;
+    }
+}
+#form{
+    h2{
+        margin: 100px;
+        color: #751994;
+        text-align: center;
+    }
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    div{
+        background-color: #A016CE;
+        color: white;
+        width: fit-content;
+        padding: 40px;
+        margin: 100px;
+    }
+    .wpcf7-response-output{
+        position: absolute;
+        top: -50px;
+    }
+}

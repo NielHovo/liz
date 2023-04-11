@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./fonts/source-sans-pro-v21-latin-200.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/source-sans-pro-v21-latin-200.eot?#iefix") format("embedded-opentype"), url("./fonts/source-sans-pro-v21-latin-200.woff2") format("woff2"), url("./fonts/source-sans-pro-v21-latin-200.woff") format("woff"), url("./fonts/source-sans-pro-v21-latin-200.ttf") format("truetype"), url("./fonts/source-sans-pro-v21-latin-200.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+}
+/* source-sans-pro-300 - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/source-sans-pro-v21-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/source-sans-pro-v21-latin-300.eot?#iefix") format("embedded-opentype"), url("./fonts/source-sans-pro-v21-latin-300.woff2") format("woff2"), url("./fonts/source-sans-pro-v21-latin-300.woff") format("woff"), url("./fonts/source-sans-pro-v21-latin-300.ttf") format("truetype"), url("./fonts/source-sans-pro-v21-latin-300.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+}
+/* source-sans-pro-600 - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/source-sans-pro-v21-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/source-sans-pro-v21-latin-600.eot?#iefix") format("embedded-opentype"), url("./fonts/source-sans-pro-v21-latin-600.woff2") format("woff2"), url("./fonts/source-sans-pro-v21-latin-600.woff") format("woff"), url("./fonts/source-sans-pro-v21-latin-600.ttf") format("truetype"), url("./fonts/source-sans-pro-v21-latin-600.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.show {
+  display: block;
+  visibility: visible;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 65px;
+  align-items: center;
+  color: #9C5899;
+  font-size: 2rem;
+  padding: 0px 10vw 0px 10vw;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.nav a {
+  text-decoration: none;
+  color: #9C5899;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url(images/background.png);
+}
+
+.hero {
+  background-color: #BF00FF;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.hero .call {
+  margin-left: 50px;
+}
+.hero .call p {
+  font-size: 2rem;
+  max-width: 25vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.hero .call button {
+  border: 4px white solid;
+  background: transparent;
+  color: white;
+  padding: 20px 40px 20px 40px;
+}
+.hero img {
+  width: 30vw;
+}
+
+#happiness {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #FFE9F8;
+  gap: 100px;
+  padding: 50px;
+}
+#happiness #title {
+  width: 35vw;
+  margin-bottom: 50px;
+}
+#happiness .level {
+  padding: 30px;
+  position: relative;
+  width: 80vw;
+  background-color: white;
+  border: 8px solid #DAC3D3;
+}
+#happiness .level h2 {
+  font-size: 4rem;
+  color: #A07292;
+}
+#happiness .level .number {
+  position: absolute;
+  left: 50%;
+  font-size: 3rem;
+  top: -40px;
+  background-color: #A07292;
+  border-radius: 50%;
+  padding: 25px;
+  color: white;
+  border: 8px solid #DAC3D3;
+}
+#happiness .level .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#happiness .level .flex p {
+  width: 80%;
+  font-size: 2rem;
+}
+#happiness .level button {
+  width: 100%;
+  border: #A07292 4px solid;
+  background-color: #F3B7E0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#about {
+  display: grid;
+  background: url("images/background.png");
+  padding: 100px;
+  place-items: center;
+  align-items: center;
+}
+#about .images {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+#about #img1 {
+  width: 30%;
+}
+#about #img2 {
+  width: 60%;
+}
+#about button {
+  margin-top: 50px;
+  border: 4px #751994 solid;
+  background: rgba(117, 25, 148, 0.5);
+  font-weight: bold;
+  color: #751994;
+  padding: 20px 40px 20px 40px;
+}
+
+#contact {
+  display: flex;
+  width: 100vw;
+}
+#contact .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+#contact .contacts h2 {
+  color: #A016CE;
+  font-size: 3.5rem;
+}
+#contact .contacts button {
+  margin-top: 50px;
+  border: 4px #751994 solid;
+  background: transparent;
+  font-weight: bold;
+  color: #751994;
+  padding: 20px 40px 20px 40px;
+}
+#contact img {
+  width: 50vw;
+}
+
+#form h2 {
+  margin: 100px;
+  color: #751994;
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+#contact div {
+  background-color: #A016CE;
+  color: white;
+  width: fit-content;
+  padding: 40px;
+  margin: 100px;
+}
+#contact .wpcf7-response-output {
+  position: absolute;
+  top: -50px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 150px;
+  background-color: #772D90;
+  border-top: #5e2571 10px solid;
+  color: white;
+}
+footer h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#coaching {
+  background: url("images/background.png");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 150px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+#coaching .course {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50vw;
+  color: white;
+  background-color: #751994;
+}
+#coaching .course p {
+  width: 80%;
+}
+#coaching .course button {
+  border: 6px solid white;
+  padding: 20px 50px 20px 50px;
+}
+#coaching .one {
+  background-color: #9935ba;
+}
+#coaching .two {
+  background-color: #b94ade;
+}
+
+/*# sourceMappingURL=style.css.map */
